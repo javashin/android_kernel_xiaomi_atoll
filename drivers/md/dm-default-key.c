@@ -397,10 +397,6 @@ static int default_key_map(struct dm_target *ti, struct bio *bio)
 		bio_crypt_set_ctx(bio, &dkc->key, dun, GFP_NOIO);
 		if (dkc->set_dun)
 			default_key_map_dun(bio, dun);
-	} else {
-		if (dkc->set_dun && bio->bi_crypt_context->is_ext4)
-			default_key_map_dun(bio, dun);
-	}
 
 	return DM_MAPIO_REMAPPED;
 }
