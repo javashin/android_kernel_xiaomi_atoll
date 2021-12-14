@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/arm64 4.14.257 Kernel Configuration
+# Linux/arm64 4.14.258 Kernel Configuration
 #
 CONFIG_ARM64=y
 CONFIG_64BIT=y
@@ -168,7 +168,7 @@ CONFIG_UTS_NS=y
 # CONFIG_USER_NS is not set
 # CONFIG_PID_NS is not set
 CONFIG_NET_NS=y
-# CONFIG_SCHED_AUTOGROUP is not set
+CONFIG_SCHED_AUTOGROUP=y
 CONFIG_SCHED_TUNE=y
 CONFIG_STUNE_ASSIST=y
 CONFIG_CPUSETS_ASSIST=y
@@ -697,7 +697,7 @@ CONFIG_ARM64_UAO=y
 #
 # Boot options
 #
-CONFIG_CMDLINE="ramoops_memreserve=4M quiet mitigations=off zswap.enabled=1 zswap.compressor=zstd zswap.max_pool_percent=20 zswap.zpool=z3fold elevator=bfq-sq coresight_cpu_debug.enable=0 debug=0 nowatchdog nmi_watchdog=0 no_debug_objects dyndbg=0 module.dyndbg=0"
+CONFIG_CMDLINE="ramoops_memreserve=4M quiet mitigations=off zswap.enabled=1 zswap.compressor=zstd zswap.max_pool_percent=20 zswap.zpool=z3fold elevator=bfq-sq coresight_cpu_debug.enable=0 debug=0 nowatchdog nmi_watchdog=0 no_debug_objects dyndbg=0 module.dyndbg=0 cgroup_disable=pressure"
 # CONFIG_CMDLINE_FROM_BOOTLOADER is not set
 CONFIG_CMDLINE_EXTEND=y
 # CONFIG_CMDLINE_FORCE is not set
@@ -3474,6 +3474,7 @@ CONFIG_DRM_MIPI_DSI=y
 # CONFIG_DRM_DP_AUX_CHARDEV is not set
 # CONFIG_DRM_DEBUG_MM is not set
 # CONFIG_DRM_DEBUG_MM_SELFTEST is not set
+# CONFIG_DRM_CLIENT_BOOTSPLASH is not set
 CONFIG_DRM_KMS_HELPER=y
 # CONFIG_DRM_FBDEV_EMULATION is not set
 # CONFIG_DRM_LOAD_EDID_FIRMWARE is not set
@@ -6002,7 +6003,7 @@ CONFIG_CRYPTO_DEV_QCOM_MSM_QCE=y
 CONFIG_CRYPTO_DEV_QCRYPTO=y
 CONFIG_CRYPTO_DEV_QCEDEV=y
 # CONFIG_CRYPTO_DEV_OTA_CRYPTO is not set
-# CONFIG_CRYPTO_DEV_QCOM_ICE is not set
+CONFIG_CRYPTO_DEV_QCOM_ICE=y
 CONFIG_ASYMMETRIC_KEY_TYPE=y
 CONFIG_ASYMMETRIC_PUBLIC_KEY_SUBTYPE=y
 CONFIG_X509_CERTIFICATE_PARSER=y
